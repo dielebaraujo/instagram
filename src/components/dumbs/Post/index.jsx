@@ -14,11 +14,11 @@ function Post(props) {
         </Styled.FirstRow>
         <Styled.PostImage src={props.post} />
         <Styled.SpacedRow>
-          <div>
+          <Row>
             <Styled.Heart />
             <Styled.Balloon />
             <Styled.Send />
-          </div>
+          </Row>
           <Styled.Save />
         </Styled.SpacedRow>
         <Styled.Footer>

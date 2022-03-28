@@ -39,6 +39,7 @@ export const UserImage = styled(DefaultImage)`
 export const Name = styled.span`
   white-space: nowrap;
   font-weight: bold;
+  font-size: 14px;
 `;
 
 export const Footer = styled.footer`
@@ -53,35 +54,35 @@ export const PostImage = styled(DefaultImage)`
 export const Dots = styled(DotsSvg)`
   height: 24px;
   width: 24px;
-  padding: 8px;
+  margin: 8px;
 `;
 
 export const Heart = styled(HeartSvg)`
   height: 24px;
   width: 24px;
-  padding: 8px;
+  margin: 8px;
 `;
 
 export const Balloon = styled(BalloonSvg)`
   height: 24px;
   width: 24px;
-  padding: 8px;
+  margin: 8px;
 `;
 
 export const Send = styled(SendSvg)`
   height: 24px;
   width: 24px;
-  padding: 8px;
+  margin: 8px;
 `;
 
 export const Save = styled(SaveSvg)`
   height: 24px;
   width: 24px;
-  padding: 8px;
+  margin: 8px;
 `;
 
 export const Description = styled.p`
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 4px;
 `;
 
@@ -90,4 +91,5 @@ export const PastTime = styled.time`
   color: #8e8e8e;
   text-transform: uppercase;
   margin-top: 8px;
+  display: block;
 `;
