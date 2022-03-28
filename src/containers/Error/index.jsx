@@ -1,13 +1,11 @@
 import Title from "../../components/dumbs/Title";
 import Text from "../../components/dumbs/Text";
 import Link from "../../components/dumbs/Link";
-import Header from "../../components/smart/Header";
 import Footer from "../../components/dumbs/Footer";
 
 function Error() {
   return (
     <section>
-      <Header />
       <Title>Está página não está disponível.</Title>
       <Text>
         O link em que você clicou pode não estar funcionando, ou a página pode

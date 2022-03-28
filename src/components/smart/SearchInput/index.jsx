@@ -1,8 +1,8 @@
-import Input from "../../dumbs/Input";
+import * as Styled from "./styled";
 
 function SearchInput(props) {
   return (
-    <Input
+    <Styled.SearchInput
       onChage={props.onChage}
       value={props.value}
       placeholder="Pesquisar"

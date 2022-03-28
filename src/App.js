@@ -1,6 +1,8 @@
-//import Error from "./containers/Error";
+import Error from "./containers/Error";
 import Feed from "./containers/Feed";
+import Header from "./components/smart/Header";
 import { createGlobalStyle } from "styled-components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
   body{
@@ -18,7 +20,17 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Feed />;
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/feed">
+            <Feed />
+          </Route>
+          <Route path="*">
+            <Error />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 }
