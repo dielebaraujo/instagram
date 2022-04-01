@@ -1,9 +1,11 @@
-import * as Styled from "./styled"
+import * as Styled from "./styled";
 
 function Link(props) {
-    return(<Styled.Link href={props.href}>
-    {props.children}
-    </Styled.Link>)
+  return (
+    <Styled.Link className={props.className} href={props.href}>
+      {props.children}
+    </Styled.Link>
+  );
 }
 
-export default Link
+export default Link;

@@ -1,36 +1,51 @@
-import Title from "../../components/dumbs/Title";
-import Text from "../../components/dumbs/Text";
-import Link from "../../components/dumbs/Link";
-import Footer from "../../components/dumbs/Footer";
+import * as Styled from "./styled";
 
 function Error() {
   return (
     <section>
-      <Title>Está página não está disponível.</Title>
-      <Text>
-        O link em que você clicou pode não estar funcionando, ou a página pode
-        ter sido removida.
-      </Text>
-      <Link href="/">Voltar para o Instagram</Link>
-      <Footer>
-        <Link href="https://about.facebook.com/meta">Meta</Link>
-        <Link href="https://about.instagram.com/">Sobre</Link>
-        <Link href="https://about.instagram.com/blog/">Blog</Link>
-        <Link href="https://www.instagram.com/about/jobs/">Carreiras</Link>
-        <Link href="https://help.instagram.com/">Ajuda</Link>
-        <Link href="https://developers.facebook.com/docs/instagram">API</Link>
-        <Link href="https://www.instagram.com/legal/privacy/">Privacidade</Link>
-        <Link href="https://www.instagram.com/legal/terms/">Termos</Link>
-        <Link href="https://www.instagram.com/directory/profiles/">
+      <Styled.ContainerError>
+        <Styled.TitleError>Está página não está disponível.</Styled.TitleError>
+        <Styled.TextError>
+          O link em que você clicou pode não estar funcionando, ou a página pode
+          ter sido removida.
+        </Styled.TextError>
+        <Styled.LinkText href="/">Voltar para o Instagram</Styled.LinkText>
+      </Styled.ContainerError>
+      <Styled.FooterError>
+        <Styled.LinkFooter href="https://about.facebook.com/meta">
+          Meta
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://about.instagram.com/">
+          Sobre
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://about.instagram.com/blog/">
+          Blog
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://www.instagram.com/about/jobs/">
+          Carreiras
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://help.instagram.com/">
+          Ajuda
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://developers.facebook.com/docs/instagram">
+          API
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://www.instagram.com/legal/privacy/">
+          Privacidade
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://www.instagram.com/legal/terms/">
+          Termos
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://www.instagram.com/directory/profiles/">
           Principais contas
-        </Link>
-        <Link href="https://www.instagram.com/directory/hashtags/">
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://www.instagram.com/directory/hashtags/">
           Hashtags
-        </Link>
-        <Link href="https://www.instagram.com/explore/locations/">
+        </Styled.LinkFooter>
+        <Styled.LinkFooter href="https://www.instagram.com/explore/locations/">
           Localizações
-        </Link>
-      </Footer>
+        </Styled.LinkFooter>
+      </Styled.FooterError>
     </section>
   );
 }

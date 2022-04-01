@@ -1,5 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const Title = styled.h3`
-    font-weight: bold;
-`
+export const Title = styled.h2`
+  font-weight: bold;
+`;

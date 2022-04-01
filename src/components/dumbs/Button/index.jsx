@@ -2,7 +2,9 @@ import * as Styled from "./styled";
 
 function Button(props) {
   return (
-    <Styled.Button onClick={props.onClick}>{props.children}</Styled.Button>
+    <Styled.Button className={props.className} onClick={props.onClick}>
+      {props.children}
+    </Styled.Button>
   );
 }
 

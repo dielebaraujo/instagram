@@ -1,9 +1,9 @@
-import * as Styled from "./styled"
+import * as Styled from "./styled";
 
 function Text(props) {
-    return <Styled.Text>
-        {props.children}
-        </Styled.Text>
+  return (
+    <Styled.Text className={props.className}>{props.children}</Styled.Text>
+  );
 }
 
-export default Text
+export default Text;
