@@ -7,7 +7,17 @@ export const Header = styled.header`
   display: flex;
   padding: 12px 112.5px;
   justify-content: space-between;
-  margin-bottom: 24px;
+  height: 60px;
+
+  @media (max-width: 479px) {
+    width: 100%;
+    justify-content: space-around;
+    padding: 12px;
+
+    & > div {
+      display: none;
+    }
+  }
 `;
 
 export const Logo = styled(Image)`

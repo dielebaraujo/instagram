@@ -3,7 +3,7 @@ import * as Styled from "./styled";
 function SearchInput(props) {
   return (
     <Styled.SearchInput
-      onChage={props.onChage}
+      onChange={props.onChange}
       value={props.value}
       placeholder="Pesquisar"
     />
